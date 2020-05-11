@@ -1,15 +1,159 @@
 body {
     width: 100vw;
-    /* background-color: bisque; */
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     font-weight: 800;
+    overflow: hidden;
 }
 
+.slider-up {
+  color: rgb(255, 0, 255);
+  opacity: 0.75;
+  position: absolute;
+  /* background-color: blueviolet; */
+  top: -100px;
+  left: 695px;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+}
+
+.slide-down {
+   animation-name: luxury;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.slide2{
+  animation-name: two;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes luxury {
+  from {
+      top: -100px;
+  }
+  to {
+      top: 370px;
+  }
+}
+
+@keyframes two {
+  from {
+      top: 370px;
+  }
+  to {
+      top: 110vh;
+  }
+}
+
+.slider-left {
+  color: rgb(255, 255, 0);
+  opacity: 0.75;
+  position: absolute;
+  /* background-color: blueviolet; */
+  left: -200px;
+  top: 335px;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+}
+
+.slide-right {
+  animation-name: submission;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+}
+
+@keyframes submission {
+  from {
+      left: -200px;
+  }
+  to {
+      left: 622px;
+    }
+  }
+
+.slider-right {
+  color: rgb(0, 255, 255);
+  opacity: 0.75;
+  position: absolute;
+  /* background-color: blueviolet; */
+  left: 110vw;
+  top: 371px;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+}
+
+.slide-left {
+  animation-name: fright;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+}
+
+@keyframes fright {
+  from {
+      left: 110vw;
+  }
+  to {
+      left: 661px;
+    }
+  }
+
+.slider-down {
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+  position: absolute;
+  /* background-color: blueviolet; */
+  left: 695px;
+  top: 110vh;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+}
+
+.slide-up {
+  animation-name: choice;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+}
+
+@keyframes choice {
+  from {
+      top: 110vh;
+  }
+  to {
+      top: 335px;
+    }
+  }
+
+
+
 .arrow {
-    border: solid black;
+    border: solid white;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 10px;
@@ -51,18 +195,17 @@ body {
     top: -100px;
 }
 
-.right-ani {
-    animation-name: luxury;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
+#submission {
+    position: absolute;
+    left: 623px;
+    top: 335px;
 }
 
-@keyframes luxury {
-    from {
-        top: -100px;
-    }
-    to {
-        top: 370px;
-    }
+.up-ani {
+  top: 370px;
+    /* animation-name: luxury;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s; */
 }
+
